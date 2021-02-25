@@ -1,0 +1,10 @@
+附件是一個python script, 其功能為往同一網域中的Rhombus R200機器, 重複呼叫執行BLE scan的功能.
+使用方式如下:
+
+在PC上安裝python, 我自己電腦上的版本為v3.8.1
+下載這個script並打開命令提示字元
+進入擺放的路徑後, 輸入python call_ble_scan.py <ip> <mac>
+ip是帶測物camera的ip, mac是陪測物的mac
+e.g. python call_ble_scan.py 192.168.200.99 01:23:45:67:89:ab
+預設執行的迴圈數我設成300, 可以編輯script中的變數修改[ scan_times = 300]
+如果執行過程想中斷, 就按下keyboard上的ctrl+X
